@@ -4,46 +4,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!-- Fuente Lobster -->
     <style>
         body {
             margin: 0;
             padding: 0;
-            background-color: #4a90e2; /* Azul entre claro y oscuro */
-            color: white; /* Texto en color blanco */
-            font-family: Arial, sans-serif; /* Tipografía limpia */
+            background: linear-gradient(to bottom, #2c3e50 2.5cm, #4a90e2 2.5cm); /* Franja de 2.5 cm */
+            color: white;
+            font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centra los textos horizontalmente */
-            justify-content: center; /* Centra los textos verticalmente */
-            height: 100vh; /* Ocupa toda la altura de la pantalla */
-            text-align: center; /* Alinea los textos al centro */
+            align-items: center;
+            justify-content: flex-start; /* Alineación inicial */
+            min-height: 100vh;
+            text-align: center;
         }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+        .franja {
+            height: 2.5cm;
+            width: 100%;
+            background-color: #2c3e50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        h2 {
-            font-size: 1.5rem;
+        .franja h1 {
+            font-family: 'Lobster', cursive;
+            font-size: 2rem;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .text-box {
+            background-color: #2c3e50;
+            border: 2px solid #4a90e2;
+            border-radius: 10px;
+            padding: 20px;
+            width: 60%;
+            margin-right: 20px;
+            color: white;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        .photo {
+            width: 150px;
+            height: 150px;
+            background-color: #4a90e2;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .email, .github {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Mi Página Web</h1>
-    <h2>Me llamo Gonzalo Bretón García, estudiante de segundo de Desarrollo 
-    de Aplicaciones Multiplataforma (DAM). Desde hace bastantes años, 
-    la informatica y en general el mundo de la tecnología, siempre ha sido 
-    algo que me ha apasionado, y algo a lo que me quiero dedicar profesionalmente.
-    A lo largo de mi formacion en DAM, he superado distintos osbtaculos y dificultades
-    con esfuerzo y trabajo obteniendo grandes resultados y adquiriendo grandes conocimientos.
-    Mi objetivo es seguir formandome academicamente, para luego 
-    poder dedicarme a este sector profesionalmente.
-    Mis sueños finales son o bien especializarme en el desarrollo de videojuegos, 
-    o bien en el diseño de webs. Estoy buscando una empresa donde pueda aprender más y 
-    donde pueda aportar valor y talento y seguir desarrollandome como profesional.
-    Estoy convencido de puedo contribuir con entusiasmo, esfuerzo y dedicación.
-    Gracias por vuestro tiemplo y consideración. Estaré encantado de proporcionar cualquier
-    información sobre como puedo encajar en vuestro equipo.  </h2>
+    <div class="franja">
+        <h1>Gonzalo Bretón García</h1>
+    </div>
+    <h2>Sobre mí</h2>
+    <div class="content">
+        <!-- Texto principal -->
+        <div class="text-box">
+            <p>
+                Me llamo Gonzalo Bretón García, estudiante de segundo de Desarrollo 
+                de Aplicaciones Multiplataforma (DAM). Desde hace bastantes años, 
+                la informática y en general el mundo de la tecnología siempre ha sido 
+                algo que me ha apasionado, y algo a lo que me quiero dedicar profesionalmente.
+                A lo largo de mi formación en DAM, he superado distintos obstáculos y dificultades
+                con esfuerzo y trabajo obteniendo grandes resultados y adquiriendo grandes conocimientos.
+                Mi objetivo es seguir formándome académicamente, para luego 
+                poder dedicarme a este sector profesionalmente.
+                Mis sueños finales son o bien especializarme en el desarrollo de videojuegos, 
+                o bien en el diseño de webs. Estoy buscando una empresa donde pueda aprender más y 
+                donde pueda aportar valor y talento y seguir desarrollándome como profesional.
+                Estoy convencido de que puedo contribuir con entusiasmo, esfuerzo y dedicación.
+                Gracias por vuestro tiempo y consideración. Estaré encantado de proporcionar cualquier
+                información sobre cómo puedo encajar en vuestro equipo.
+            </p>
+        </div>
+        <!-- Espacio para la foto y enlaces -->
+        <div class="sidebar">
+            <div class="photo">
+                <img Imagen>
+            </div>
+            <div class="email">
+                <h3>Correo</h3>
+                <p>gonzalobretongarcia05@gmail.com</p>
+            </div>
+            <div class="github">
+                <h3>GitHub</h3>
+                <a href="#" target="_blank">Tu perfil de GitHub</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
